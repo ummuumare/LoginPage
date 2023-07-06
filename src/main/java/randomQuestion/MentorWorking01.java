@@ -7,13 +7,8 @@ public class MentorWorking01 {
         Örnek:'Ali Can' için n yazdırmalısınız.
         ‘Miami’ için i yazdırmalısınız.*/
         String word = " Ali Can ";
-        int ka =  word.trim().toLowerCase().replaceAll("[^A-Z]","*").length();
-       // char son =  word.charAt(word-1);
-      // System.out.println(son);
-
-
-
-
+       String  son = word.trim().substring(6);
+      System.out.println(son);
 
        /*
         String a = " Miami 33018!!! ";
@@ -43,17 +38,6 @@ public class MentorWorking01 {
         boolean isRight = password.replaceAll(" ", "").length()>7;
         boolean varMi = password.replaceAll("a-zA-Z0-9","").replaceAll(" ","").length()>0;
         System.out.println(isRight && varMi);
-
-
 */
-
-
-
-
-
-
-
-
-
     }
 }

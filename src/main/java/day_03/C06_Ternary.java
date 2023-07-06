@@ -4,10 +4,11 @@ import java.util.Scanner;
 
 public class C06_Ternary {
     public static void main(String[] args) {
-       //kullanıcıdan bir sayı alınız
-    //verılen sayının 3 veya daha cok bsmklı olup olmadıgını  ternary ile kontrol eden
-    // ve yazdıran bir method olusturun
-        Scanner input = new Scanner(System.in);
+        //kullanıcıdan bir sayı alınız
+        //verılen sayının 3 veya daha cok bsmklı olup olmadıgını  ternary ile kontrol eden
+        // ve yazdıran bir method olusturun
+
+         Scanner input = new Scanner(System.in);
         System.out.println("Please give a number..");
         int num = input.nextInt();
       //main method icinden method olustururken;
@@ -19,5 +20,4 @@ public class C06_Ternary {
         System.out.println(num > 99 ? "uc veya daha cok basamakli" : "ucten az basamakli");
 
     }
-
 }

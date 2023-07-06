@@ -2,7 +2,7 @@ package day_02;
 
 import java.util.Scanner;
 
-public class C02MethodCreation {
+public class C02_MethodCreation {
     //kullanicidan Fahrenheit cinsi bir deger girmesini isteyin
     // Fahrenheit değeri, Celsius değere çeviren method yazınız.
     // formül: c = (f-32)/1.8
@@ -25,7 +25,6 @@ public class C02MethodCreation {
         System.out.println("celsius = " + celsius);
 
     }
-
     public static double fahrToCels(double fahrenheit) {
         //formül: c = (f-32)/1.8
         double celsius=(fahrenheit-32)/1.8;

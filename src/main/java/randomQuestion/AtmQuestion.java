@@ -41,7 +41,6 @@ public class AtmQuestion {
         }
         public double paraCek(){
             System.out.println("Ckemek istediginiz miktari giriniz");
-
             para = input.nextDouble();
             if(bakiye>=para){
                 bakiye = bakiye - para;

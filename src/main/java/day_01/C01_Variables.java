@@ -33,7 +33,6 @@ public class C01_Variables {
         String onunIsmi = isim;
         System.out.println("onunIsmi = " + onunIsmi);
 
-
         //ayni satirlari coklu variable declare et
 
         int yil = 2023, ay = 5, gun= 15;

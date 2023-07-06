@@ -11,6 +11,7 @@ public class C02If {
         int number1 =input.nextInt();
         System.out.println("Lutfen ikinci sayiyi giriniz..");
         int number2 = input.nextInt();
+
         if (number1>number2){
             System.out.println("Birinci sayi  ikinci sayidan buyuktur");
         }else{

@@ -13,6 +13,15 @@ public class C05_IfElse {
         Scanner input = new Scanner(System.in);
         System.out.println("Lutfen uc karakterden daha uzun bir kelime giriniz..");
         String word =input.next();
+        String sonUc = word.substring(word.length()-3);
+
+        if (word.length() < 3){
+            System.out.println("3 Karakterden Daha Uzun Bir Kelime Girmelisiniz");
+        }else {
+            System.out.println(sonUc+word+sonUc);
+        }
+
+/*
         int uzunluk = word.length();
         String sonUc = word.substring(uzunluk-3);
         if (uzunluk < 4){
@@ -34,6 +43,6 @@ public class C05_IfElse {
             System.out.println(lastThree+word1+lastThree);
         }
 
-
+*/
     }
 }

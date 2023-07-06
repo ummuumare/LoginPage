@@ -1,7 +1,5 @@
 package day_01;
-
 import java.util.Scanner;
-
 public class c04_MethodCreation {
     //konsole;
      /*
@@ -23,7 +21,6 @@ public class c04_MethodCreation {
         System.out.println(name);
         
     }
-
     //syntax: Access modifier + static keyword + return type + methodismi(){} ....> {body} kodlarin yazildigi yerdir
     public static void yazdir(){
 
@@ -34,8 +31,4 @@ public class c04_MethodCreation {
         System.out.println("HELLo WORLd");
         System.out.println("HELLO WORLD");
     }
-
-
-
-
 }

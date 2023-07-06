@@ -127,6 +127,95 @@ String sehir = "miami";
         Integer karakterSayisi = s.replaceAll("\\s","").replaceAll("[^A-Za-z0-9]","").length();
         System.out.println("Toplam alfabetik ve sayısal karakter sayisi:" + karakterSayisi);
 
+       // Bir String değişkeni oluşturunuz,
+        // String'deki rakam olmayan karakterlerin sayısını konsolda yazdırınız.
+      //  Örnek: String: '1a3Bcf4!...' ise konsolda 8 yazdırmanız gerekir.
+           String rakamOlmayanKarakterler = "1a3Bcf4!...";
+
+        System.out.println("rakam Olmayan Karakterler Sayisi :  " + rakamOlmayanKarakterler.replaceAll("[0-9]","").length());
+        //Bir String değişkeni oluşturunuz ve String değişkenin konsolda boşluk olmayan son karakteri yazdırınız.
+          // Örnek: 'Ali Can' için n yazdırmalısınız. ‘Miami’ için i yazdırmalısınız
+
+        String names = "Ali Can ";
+        int sonKarakter = names.trim().length()-1;
+       String sonHali = names.substring(sonKarakter);
+        System.out.println(sonHali);
+         char sonHarf = names.trim().charAt(6);
+             System.out.println(sonHarf);
+//Bir String değişkeni oluşturunuz ve String'in ilk ve son
+// karakterlerinin ASCII değerlerinin toplamını bulunuz.
+    // String z = "Miami";
+        //   char ilk =  z.charAt(0);
+        //   String sonk = z.substring(4);
+
+     //   System.out.println(ilk +sonk);
+
+        String p = "Miami";
+        int sonKrkIndex = s.length()-1;
+        int ilkKrkAscii= s.charAt(0);
+        int sonKrkAscii = s.charAt(sonKrkIndex);
+        System.out.println("ilk ve son karakterlerin ASCII degerlerinin toplami: " + (ilkKrkAscii + sonKrkAscii));
+//Bir String değişkeni oluşturunuz ve
+// ilk karakteri dışındaki tüm karakterleri konsolda yazdırınız.
+//Örnek: String 'Java' ise konsola 'ava' yazdırmalısınız.
+        String j = "Java";
+        System.out.println(j.substring(1));
+
+        // Bir String değişkeni oluşturunuz ve son karakteri dışındaki tüm karakterlerini konsolda büyük harfle yazdırınız.
+        //Örnek: String 'Java' ise konsola 'JAV' yazdırmalısınız.
+   String ne = "Java";
+     char cC = ne.charAt(3);
+     String so = ne.substring(0,3).toUpperCase();
+    System.out.println(so + cC);
+//Bir String değişkeni oluşturunuz ve konsolda ilk karakter ve
+// son karakter dışındaki tüm karakterleri büyük harflerle yazdırınız.
+//Örnek: String 'Java' ise konsolda 'AV' yazdırmalısınız.
+
+
+        String me = "Java";
+        System.out.println(me.substring(1,3).toUpperCase());
+        int S = me.length()-1;
+        System.out.println(me.substring(1,S).toUpperCase());
+
+//Bir String in ortadaki herhangi bir konumda yalnızca tek bir boşluk karakteri olup olmadığını kontrol etmek için kod yazınız.
+//Örnek: ‘Ali Can’ için konsolda false yazmalıdır.
+//Ali Can ’ için konsolda false yazmalıdır.
+//Ali Can ’ için konsolda false yazmalıdır.
+// ‘Ali Can’ için konsolda true yazmalıdır.
+        String orta = " Ali   Can ";
+        String trimlenme = orta.trim().replaceAll("\\s","");
+        boolean boslukVarMi = trimlenme.contains(" ");
+        System.out.println(boslukVarMi);
+
+   //Bir String’ in başında ve sonunda boşluk karakteri olup olmadığını kontrol etmek için kod yazınız.
+        // Örnek: ‘ Ali ’ için kodunuz konsolda false yazmalıdır ‘Ali’ için kodunuz konsolda true yazmalıdır
+
+       String ism = " Ali ";
+       String trm =ism.trim();
+       boolean result = ism.equals(trm);
+        System.out.println(result);
+           boolean boslukMu = ism.contains(" ");
+       System.out.println(boslukMu);
+/*
+        Bir String’ in başında büyük harf ve sonunda nokta olup olmadığını kontrol etmek için kod yazınız.
+        Örnek: ‘Ali’ için kodunuz konsolda false yazdırmalıdır ‘ali.’ için kodunuz konsolda false yazdırmalıdır
+‘ Ali. ’ için kodunuz konsolda false yazdırmalıdır ‘Ali.’ için kodunuz konsolda true yazdırmalıdır
+‘ALI.’ için kodunuz konsolda true yazdırmalıdır*/
+
+        String ali = "Ali.";
+        char ilkHarfB = ali.charAt(0);
+       // char sonH = ali.charAt(ali.length()-1);
+        boolean buyuk = ilkHarfB >= 'A'&& ilkHarfB <='Z';
+        boolean niha =  ali.contains(".");
+        boolean all = niha&&buyuk;
+
+       System.out.println(all);
+
+
+
+
+
+
 
 
 

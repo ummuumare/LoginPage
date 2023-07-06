@@ -1,7 +1,6 @@
 package day_01;
 
 public class C03_Ortalama {
-
      /*
         double num1 = 23.4;
         double num2 = 24.0;
@@ -12,7 +11,6 @@ public class C03_Ortalama {
        Bu sayıların ortalamasını hesaplayan bir kod yazınız.
      */
      public static void main(String[] args) {
-
          double num1 = 23.4;
          double num2 = 24.0;
          double num3 = 12;
@@ -31,7 +29,4 @@ public class C03_Ortalama {
          System.out.println("ortalama = " + ortalama);//121.94000000000001
 
      }
-
-
-
 }

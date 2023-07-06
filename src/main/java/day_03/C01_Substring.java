@@ -12,6 +12,26 @@ public class C01_Substring {
     Soyad : Can
      */
         Scanner input = new Scanner(System.in);
+        System.out.println("Please enter ur name and surname wth a space btw them ");
+        String name = input.nextLine();
+        char ilk = name.split(" ")[0].toUpperCase().charAt(0);
+        String full1 = name.split(" ")[0].substring(1).toLowerCase();
+        char son = name.split(" ")[1].toUpperCase().charAt(0);
+        String full2 = name.split(" ")[1].substring(1).toLowerCase();
+        //  int full = ilk +\n  son
+        System.out.println(" " + ilk + full1 + "\n " + son + full2) ;
+    }
+
+    }
+    /*
+     public static void adSoyad(String name, String surname) {
+
+         char ch = name.toUpperCase().charAt(0);
+         char ch1 = surname.toUpperCase().charAt(0);
+         System.out.println("ch"+ "\n ch1");
+     } }
+      /*
+        Scanner input = new Scanner(System.in);
         System.out.println("Lutfen ad ve soy adinizi aralarinda bir bosluk olacak sekilde giriniz..");
         String adSoyad =input.nextLine();//next methodu sadece space e kadar olan kismi alir
          //space index bulurum
@@ -36,15 +56,4 @@ public class C01_Substring {
         System.out.println("----------------------------");
         System.out.println("Ad = "  + ad);
         System.out.println("Soyad = " + soyad);
-
-
-
-
-
-
-
-
-
-
-    }
-}
+*/

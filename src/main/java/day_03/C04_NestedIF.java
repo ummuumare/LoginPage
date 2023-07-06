@@ -13,6 +13,7 @@ public class C04_NestedIF {
         Scanner input =new Scanner(System.in);
         System.out.println("Lutfen bir numara giriniz");
         int num = input.nextInt();
+
         if (num <0 ){
             System.out.println("Negatif sayi");
         }else {
